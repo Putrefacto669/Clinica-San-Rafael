@@ -62,6 +62,3 @@ cd clinica-san-rafael
 Instalar dependencias
 pip install pyttsx3 tkcalendar mysql-connector-python matplotlib seaborn pandas
 
-GitHub: @Putrefacto669
-
-⭐ Si este proyecto te ayuda, considera dejar una estrella en GitHub 💙
