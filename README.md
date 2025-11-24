@@ -59,4 +59,121 @@
 ```bash
 git clone https://github.com/Putrefacto669/clinica-san-rafael.git
 cd clinica-san-rafael
+Instalar dependencias
+pip install pyttsx3 tkcalendar mysql-connector-python matplotlib seaborn pandas
 
+3️⃣ Configurar base de datos MySQL
+CREATE DATABASE clinica_san_rafael;
+
+4️⃣ Ejecutar la aplicación
+python Hospital.py
+
+📁 Dependencias Principales
+Módulo	Versión	Función
+tkinter	Incluido	Interfaz gráfica principal
+mysql-connector-python	Latest	Conexión con MySQL
+matplotlib	3.5+	Generación de gráficos
+seaborn	0.11+	Visualizaciones estadísticas
+pandas	1.3+	Procesamiento de datos
+pyttsx3	2.90+	Asistente de voz
+tkcalendar	1.6.1	Selectores de fecha
+🔧 Configuración
+⚙️ Configuración de Correo
+self.config_correo = {
+    'smtp_server': 'smtp.gmail.com',
+    'port': 587,
+    'email': 'tu_correo@gmail.com',
+    'password': 'tu_contraseña_de_aplicacion'
+}
+
+
+✅ Nota: Gmail requiere contraseña de aplicación.
+
+🗄️ Configuración de Base de Datos
+
+El sistema crea automáticamente las tablas necesarias al ejecutarse por primera vez.
+
+👥 Roles del Sistema
+Rol	Permisos	Módulos Accesibles
+Administrador	Acceso total	Todos los módulos
+Médico	Gestión clínica	Citas, Pacientes, Reportes
+Enfermero	Soporte clínico	Inventario, Alertas, Medicamentos
+Recepcionista	Gestión operativa	Citas, Pacientes, Consultas
+🛡️ Seguridad
+
+✅ Contraseñas cifradas con SHA-256
+✅ Control de sesiones con expiración
+✅ Validación de entrada contra inyecciones SQL
+✅ Logging de auditoría para operaciones críticas
+✅ Backup automático de base de datos
+
+📊 Módulos Disponibles
+
+Dashboard — Resumen ejecutivo y métricas
+
+Gestión de Pacientes — Historial médico completo
+
+Inventario Médico — Control de stock y vencimientos
+
+Agenda de Citas — Calendarización flexible
+
+Sistema de Alertas — Notificaciones inteligentes
+
+Reportes — Análisis y estadísticas
+
+Comunicaciones — Correo automatizado
+
+Configuración — Personalización del sistema
+
+🐛 Solución de Problemas
+❌ Error de conexión a MySQL
+# Verificar que el servicio esté activo
+sudo systemctl status mysql
+
+# Probar conexión manual
+mysql -u root -p
+
+❌ Problemas con Tkinter (Linux)
+sudo apt install python3-tk
+
+❌ Error de dependencias
+# Actualizar pip
+pip install --upgrade pip
+
+# Reinstalar dependencias
+pip install -r requirements.txt
+
+🤝 Contribuciones
+
+¡Pull requests son bienvenidos! Para cambios importantes:
+
+Haz un fork del proyecto
+
+Crea una rama para tu feature:
+
+git checkout -b feature/AmazingFeature
+
+
+Realiza commits:
+
+git commit -m "Add some AmazingFeature"
+
+
+Súbela al repositorio:
+
+git push origin feature/AmazingFeature
+
+
+Abre un Pull Request
+
+📜 Licencia
+
+Distribuido bajo licencia MIT.
+Consulta el archivo LICENSE para más información.
+
+👨‍💻 Autor
+
+Josu Urbina
+GitHub: @Putrefacto669
+
+⭐ Si este proyecto te ayuda, considera dejar una estrella en GitHub 💙
