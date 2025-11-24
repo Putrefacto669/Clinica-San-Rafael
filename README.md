@@ -61,4 +61,3 @@ git clone https://github.com/Putrefacto669/clinica-san-rafael.git
 cd clinica-san-rafael
 Instalar dependencias
 pip install pyttsx3 tkcalendar mysql-connector-python matplotlib seaborn pandas
-
